@@ -8,7 +8,7 @@
 </head>
 <body>
   <header>
-    <img src="images/Porsche_logo.svg.png" alt="Porsche" class="logo">
+    <img src="img/Porsche_logo.svg.png" alt="Porsche" class="logo">
     <h1>Porsche Dünyasına Hoş Geldin!</h1>
   </header>
 
@@ -16,17 +16,17 @@
     <h2>En Popüler Modeller</h2>
     <div class="model-container">
       <div class="model-card" onclick="showDetails('911')">
-        <img src="images/911.jpeg" alt="Porsche 911">
+            <img src="/9img11.jpeg" alt="Porsche 911">
         <h3>Porsche 911</h3>
         <p>Saf performans. İkonik tasarım.</p>
       </div>
       <div class="model-card" onclick="showDetails('taycan')">
-        <img src="images/taycan.jpeg" alt="Taycan">
+        <img src="image/taycan.jpeg" alt="Taycan">
         <h3>Taycan</h3>
         <p>Elektrikli performansın geleceği.</p>
       </div>
       <div class="model-card" onclick="showDetails('cayenne')">
-        <img src="images/Cayenne.jpeg" alt="Cayenne">
+        <img src="image/Cayenne.jpeg" alt="Cayenne">
         <h3>Cayenne</h3>
         <p>SUV tarzı, Porsche ruhu.</p>
       </div>
@@ -36,6 +36,44 @@
   <section id="detaylar">
     <h2>Model Detayları</h2>
     <div id="modelDetay"></div>
+  </section>
+
+  <section id="diger-modeller">
+    <h2>Diğer Porsche Modelleri</h2>
+    <div class="model-container">
+      <div class="model-card">
+        <img src="images/panamera.jpg" alt="Panamera">
+        <h3>Panamera</h3>
+        <p>Lüks ve performansın mükemmel uyumu.</p>
+      </div>
+      <div class="model-card">
+        <img src="images/macan.jpg" alt="Macan">
+        <h3>Macan</h3>
+        <p>Kompakt SUV, güçlü karakter.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="hakkinda">
+    <h2>Hakkımızda</h2>
+    <p>Bu site Porsche hayranı M. Akın Korba tarafından tutkuyla oluşturulmuştur. 
+       Amaç, Porsche’nin ruhunu ve estetiğini paylaşmak.</p>
+  </section>
+
+  <section id="iletisim">
+    <h2>Bize Ulaş</h2>
+    <form>
+      <label for="ad">Adınız:</label><br>
+      <input type="text" id="ad" name="ad" required><br>
+
+      <label for="email">E-posta:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="mesaj">Mesajınız:</label><br>
+      <textarea id="mesaj" name="mesaj" rows="4" required></textarea><br>
+
+      <button type="submit">Gönder</button>
+    </form>
   </section>
 
   <footer>
